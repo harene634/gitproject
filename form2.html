@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>FormValidation</title>
+</head>
+<body>
+    <div class="container">
+        
+            <h1><b>Course Selection Form</b></h1>
+            <br>
+            <br>
+            <form action="about.html" name="validform" onsubmit="return valid()">
+                <h5><b>Name</b></h5>
+                <div class="input-group ">
+                    <span class=" input-group-addon "><i class="glyphicon glyphicon-user "></i></span>
+                    <input type="text " class="form-control " placeholder="Name" name="nmae">
+                </div><br>
+                <h5><b>E-mail</b></h5>
+                <div class="input-group ">
+                    <span class="input-group-addon "><i class="glyphicon glyphicon-mail">@</i></span>
+                    <input id="email" type="email " class="form-control " name="email" placeholder="E-mail Address">
+                </div> <br>
+                <h5><b>Password</b></h5>
+                <div class="input-group ">
+                    <span class="input-group-addon "><i class="glyphicon glyphicon-phone-password">$</i></span>
+                    <input type="password" name="pass" class="form-control " placeholder="Enter strong password">
+                </div>
+                <br>
+                <h5><b>Confirm Password</b></h5>
+                <div class="input-group ">
+                    <span class="input-group-addon "><i class="glyphicon glyphicon-phone-password">$</i></span>
+                    <input type="password" name="cpass" class="form-control " placeholder="Enter your password">
+                </div>
+                <br>
+                <h5><b>Phone</b></h5>
+                <div class="input-group ">
+                    <span class="input-group-addon "><i class="glyphicon glyphicon-phone-alt"></i></span>
+                    <input type="number" name="phone" class="form-control " placeholder="(9876543210)">
+                </div>
+                <br><br>
+                <h5><b>Gender</b></h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender">
+                    <label class="form-check-label">
+              Female
+            </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender">
+                    <label class="form-check-label">
+              Male
+            </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender">
+                    <label class="form-check-label">
+              Others
+            </label>
+                </div>
+                <br>
+                <h5><b>Courses</b></h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="course">
+                    <label class="form-check-label">
+              Web Technology
+            </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="course">
+                    <label class="form-check-label">
+              Cyber Security
+            </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="course">
+                    <label class="form-check-label ">
+              Artificial Intelligence
+            </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="course">
+                    <label class="form-check-label">
+              Virtual Reality
+            </label>
+                </div><br><br> <button type="button" class="btn btn-success">Submit</button>
+            </form>
+        
+    </div>
+</body>
+
+</html>
